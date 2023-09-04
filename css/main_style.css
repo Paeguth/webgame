@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Irish Grover', cursive; /* Заносим шрифт из Google Fonts в весь проект и обозначаем то, как его именовать в нём. Через запятую обозначено "семейство" шрифта (прямой и без засечек, в данном случае). Если шрифты не загрузятся с сайта, будут использованы те, что имеются на ПК пользователя из данного семейства шрифтов */
+}
+
+.header{
+    display: flex; /* Какая-то хуерга */
+    
+    flex-direction: column; /* Текст будет переноситься по колонкам */
+    
+    /*
+    justify-content: center; /* Выравниваем по вертикали 
+    align-items: center; /* Выравниваем по горизонтали */
+    
+    width: 100%;
+    height: 100vh;
+    
+    /* position: relative; /* Теперь header родительская позиция, от неё будет плять .header-остальные, обнуляя позицию своим position: absolute */
+  
+    background-image: url(./../gif/mainGIF/cat.gif);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  
+  .header-title {
+
+    margin-left: 10rem;
+    width: 549px; /* Это говно делает рамку высотой в 549 пикселей, за пределы которой текст (или другой объект) не может выйти */
+    height: 214px; /* Это говно делает рамку шириной в 241 пикселей, за пределы которой текст (или другой объект) не может выйти */
+    top: calc(50% - 214px/2 - 122px);
+
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 155px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FF6B6A;
+
+    /*
+    margin: 0; /* Отступ везде
+    margin-bottom: 25px; /* Отступ снизу 
+    margin-left: 25px; /* Отступ слева
+    font-weight: 600; /* Жирность текста (можно просто написать "bold", например
+    font-size: 12rem; /* Размер шрифта 
+    line-height: 70%; /* Множитель высоты строки 
+    letter-spacing: 0.1em; /* Расстояние между буквами 
+    color: #FF6B6A;
+    */
+  }
+  
+  .header-subtitle {
+
+    margin-left: 12.5rem;
+    width: 539px;
+    height: 180px;
+    top: calc(50% - 180px/2 + 229px);
+
+    font-size: 2rem;
+    text-shadow: 2px 0 2px blue,
+                  0 2px 2px #8c1b21,
+                  -2px 0 2px #8c1b21,
+                  0 -2px 2px #8c1b21;
+    color: white;
+  }
+
+  .header-arrow {
+
+    bottom: 10rem;
+    left: 24rem;
+  }

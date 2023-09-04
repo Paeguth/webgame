@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Змейка</title>
+	<link rel="stylesheet" href="./css/style.css"> <!Здесь цепляю html с css файлом и указываю путь css-ки>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> <!Здесь цепляю шрифты с гугл фонта>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Используй стрелки на клавиатуре для начала игры.</h1>
+	<h2><a style="color: green;" href="https://spb.hh.ru/employer/240410?hhtmFrom=vacancy" target="_blank">ООО Maxima</a>, возьмите на стажировку, пожалуйста</h2>
+	<!благодаря target="_blank" ссылка автоматически открывается в новой вкладке>
+
+	<canvas id="game" width="608" height="608"></canvas>
+	<script src="./js/game.js"></script>
+
+	<h2 style = "color: black;"> Другие игры:</h2>
+	<ul> <!Список. Можно также использовать "ol" для списка с цифрами>
+		<li>
+			<img src="./img/snakeIMG/food.png" alt="морковка"
+			width="24px"
+			height="24px">
+			<!Путь к изображению. "alt" будет отображать текст "морковка", если что-то пойдёт не так.>
+			<a href="./tetris.html"
+			target="_blank">
+			Тетрис</a>
+		</li>
+		<li>
+			<img src="./img/snakeIMG/snakeicon.png" alt="Змейка"
+			width="25"
+			height="30">
+			<a href="./snake.html"
+			target="_blank">
+			Змейка</a>
+		</li>
+	</ul>
+</body>
+</html>
